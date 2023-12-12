@@ -14,3 +14,9 @@
 
 <img width="1710" alt="스크린샷 2023-12-12 오후 5 24 34" src="https://github.com/MaroHan77/Software/assets/118826586/4e8cd369-30f7-474f-98f7-033d25e6472e">
 
+---
+
+### 파일 설명
+* web 파일 : *index.html*
+* css 파일 : *styles.css*
+* 자바스크립트 : *script.js*

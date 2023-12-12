@@ -15,7 +15,8 @@ function displaySearchResults() {
         '뉴진스': ['https://www.youtube.com/embed/Km71Rr9K-Bw', 'https://www.youtube.com/embed/C3GouGa0noM', 'https://www.youtube.com/embed/ArmDp-zijuc'],
         '아이돌': ['https://www.youtube.com/embed/Km71Rr9K-Bw', 'https://www.youtube.com/embed/ArmDp-zijuc'],
         '뮤비': ['https://www.youtube.com/embed/Km71Rr9K-Bw', 'https://www.youtube.com/embed/gdZLi9oWNZg'],
-        '행복': ['https://www.youtube.com/embed/B_bPHHLkLu8'],
+        '행복': ['https://www.youtube.com/embed/B_bPHHLkLu8', 'https://www.youtube.com/embed/WC7cNEyFTlI'],
+        '크리스마스': ['https://www.youtube.com/embed/nlR0MkrRklg', 'https://www.youtube.com/embed/WC7cNEyFTlI', 'https://www.youtube.com/embed/SV0QITeyv00'],
         // 다른 태그들도 필요에 따라 추가
     };
 
