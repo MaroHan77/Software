@@ -19,6 +19,10 @@ header {
     font-weight: bold;
 }
 
+.no-style { /* 로고에 a 태그를 사용하기 위해 설정 */
+    all: unset;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
