@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #87CEEB;  /* 하늘색 */
     color: white;
     padding: 1em;
     text-align: center;
@@ -64,16 +64,16 @@ input {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #5F9EA0;  /* 더 진한 하늘색 */
     color: white;
     border: none;
     padding: 10px;
     border-radius: 0 5px 5px 0;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 footer {
-    background-color: #333;
+    background-color: #87CEEB;  /* 하늘색 */
     color: white;
     text-align: center;
     padding: 10px;
