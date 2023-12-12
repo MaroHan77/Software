@@ -12,7 +12,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="search-results.html">Search</a></li>
+            <li><a href="search-results.html" id="searchLink">Search</a></li>
             <li><a href="community.html">Community</a></li>
         </ul>
     </nav>
@@ -21,17 +21,46 @@
 <main>
     <section id="search-results">
         <h2>Search Results</h2>
-        <div class="video-frame">
-            <video width="640" height="360" controls>
-                <source src="sample-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <div id="searchContent"></div>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2023 MediaFlow. All rights reserved.</p>
 </footer>
+
+<script>
+    // URL에서 검색어 추출
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get('query');
+
+    // 검색어를 표시할 요소 가져오기
+    const searchContent = document.getElementById('searchContent');
+
+    // 검색어를 화면에 표시
+    if (searchTerm) {
+        searchContent.innerHTML = `<p>Search results for: <strong>${searchTerm}</strong></p>`;
+
+        // 여기에 검색 결과에 따라 다른 종류의 iframe을 동적으로 생성하는 로직 추가
+        const iframe = document.createElement('iframe');
+        iframe.width = '640';
+        iframe.height = '360';
+
+        // 검색어에 따라 다른 종류의 iframe 주소 설정
+        if (searchTerm === 'movie') {
+            iframe.src = 'https://www.youtube.com/embed/VMZBhtnCk4I';
+        } else if (searchTerm === 'music') {
+            iframe.src = 'https://www.youtube.com/embed/VMZBhtnCk4I;
+        } else {
+            // 기본적으로 띄울 iframe 주소 (예: 기타 카테고리)
+            iframe.src = 'https://www.youtube.com/embed/VMZBhtnCk4I';
+        }
+
+        // iframe을 화면에 추가
+        searchContent.appendChild(iframe);
+    } else {
+        searchContent.innerHTML = `<p>No search term provided.</p>`;
+    }
+</script>
 </body>
 </html>

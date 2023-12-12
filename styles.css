@@ -47,6 +47,10 @@ section {
     text-align: center;
 }
 
+#search-results {
+    text-align: center;
+}
+
 .search-container {
     display: flex;
     justify-content: center;
